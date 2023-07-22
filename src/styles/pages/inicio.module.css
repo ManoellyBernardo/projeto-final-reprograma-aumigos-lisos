@@ -1,0 +1,35 @@
+.introductionContainer {
+  background-color: var(--yellow-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.textIntroductionContainer {
+  width: 40rem;
+  text-align: justify;
+}
+
+.adoptionContainer {
+  background-color: var(--primary);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 40rem;
+  text-align: center;
+}
+
+.cardsContent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.whereAdoptionContainer {
+  background-color: var(--primary);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

@@ -1,0 +1,17 @@
+.cardContent {
+  background-color: var(--light);
+  width: 25rem;
+  height: 10rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: justify;
+  font-size: 0.8rem;
+  padding: 1rem;
+}
+
+.cardContent img {
+  width: 8rem;
+  height: 8rem;
+}
