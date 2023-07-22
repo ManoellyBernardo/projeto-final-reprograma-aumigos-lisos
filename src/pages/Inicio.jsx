@@ -10,7 +10,6 @@ import pet_sad1 from "../assets/imgs/pages/inicio/kitty.png"
 import pet_sad2 from "../assets/imgs/pages/inicio/sad.png"
 
 import styles from "../styles/pages/inicio.module.css"
-import InstagramEmbed from "../components/InstagramEmbeed"
 
 const Inicio = () => {
   return (
@@ -47,7 +46,10 @@ const Inicio = () => {
       <section className={styles.whereAdoptionContainer}>
         <h3>"E onde eu posso encontrar meu futuro amigo ?"</h3>
         <p>Aqui ó:</p>
-        < InstagramEmbed />
+        < CardInstragram
+          nomeOng={"Ong"}
+          linkPostInstagram={"https://www.instagram.com/p/Cuw-QbbLT9b/embed/"}
+        />
       </section>
     </main>
   )
