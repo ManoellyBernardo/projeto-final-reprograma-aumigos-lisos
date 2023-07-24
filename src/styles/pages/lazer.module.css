@@ -1,0 +1,82 @@
+.leisureContainer {
+  background-color: var(--primary);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.headerLeisureContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.headerLeisureContainer h2 {
+  width: 20rem;
+}
+
+.headerLeisureContainer img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.parks {
+  background-color: var(--light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.cardIndicationParkContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.shoppings {
+  background-color: var(--light);
+  border-radius: 10px;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 1rem;
+  padding-left: 1rem;
+}
+
+.shoppings ul {
+  padding: 1rem;
+}
+
+.uberPet {
+  background-color: var(--light);
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.cardsIntagramContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cardsIntagramContainer img {
+  width: 15rem;
+  height: 15rem;
+  align-self: flex-end;
+}

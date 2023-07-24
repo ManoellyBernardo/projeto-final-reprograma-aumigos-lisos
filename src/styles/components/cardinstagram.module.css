@@ -1,8 +1,23 @@
 .cardInstragramContent {
   background-color: var(--light);
-  width: 30rem;
-  height: 40rem;
+  width: 27rem;
+  height: 42rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.cardInstragramContent iframe {
+  align-self: center;
+}
+
+.cardInstragramContentText {
+  text-align: left !important;
+  padding: 0;
+}
+
+.postInstagram {
+  width: 30rem;
 }

@@ -16,7 +16,7 @@ const Inicio = () => {
     <main>
       <section className={styles.introductionContainer}>
         <div>
-          <img src={pet_care} alt="tutor dando amor ao seu cachorro" />
+          <img src={pet_care} alt="Tutor dando amor ao seu cachorro" />
         </div>
         <div className={styles.textIntroductionContainer}>
           <h2>Lisos sim, mas ricos de amor para dar.</h2>
@@ -46,10 +46,36 @@ const Inicio = () => {
       <section className={styles.whereAdoptionContainer}>
         <h3>"E onde eu posso encontrar meu futuro amigo ?"</h3>
         <p>Aqui ó:</p>
-        < CardInstragram
-          nomeOng={"Ong"}
-          linkPostInstagram={"https://www.instagram.com/p/Cuw-QbbLT9b/embed/"}
-        />
+        <div className={styles.cardsIntagramContainer}>
+          < CardInstragram
+            nome="Lar Bola de Pêlos"
+            contato="(apenas WhatsApp) Talita (81) 99990.3645"
+            localizacao="Candeias, Jaboatão dos Guararapes"
+            linkPostInstagram="https://www.instagram.com/p/Cuw-QbbLT9b/embed/"
+            id="cardinstagram0"
+          />
+          < CardInstragram
+            nome="Abrigo de Seu Alberto"
+            contato="(apenas WhatsApp): Talita (81) 99990.3645"
+            localizacao="Recife"
+            linkPostInstagram="https://www.instagram.com/p/CsPVx_ROWP0/embed/"
+            id="cardinstagram1"
+          />
+          < CardInstragram
+            nome="Abrigo Eu Amo Animais"
+            contato="Não informado"
+            localizacao="Prado, Zona Oeste do Recife"
+            linkPostInstagram="https://www.instagram.com/p/CsrCRj-rw-R/embed/"
+            id="cardinstagram2"
+          />
+          < CardInstragram
+            nome="Adota um Felino"
+            contato="Flávia Castro (81) 97908-4149"
+            localizacao="Casa Forte, Zona Norte do Recife"
+            linkPostInstagram="https://www.instagram.com/p/Csw6EEZrKyQ/embed/"
+            id="cardinstagram3"
+          />
+        </div>
       </section>
     </main>
   )

@@ -1,0 +1,19 @@
+.cardIndicationContainer {
+  height: 35rem;
+  width: 25rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cardIndicationContainer p {
+  text-align: left;
+}
+
+.maps {
+  width: 25rem;
+  height: 25rem;
+  border: 0;
+  align-self: center;
+}

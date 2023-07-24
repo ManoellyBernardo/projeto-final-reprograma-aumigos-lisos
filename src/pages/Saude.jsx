@@ -1,17 +1,26 @@
+import pet_care1 from "../assets/imgs/pages/saude/pet-care1.png"
 import foto_hvr from "../assets/imgs/pages/saude/HVR.jpg"
+import foto_hrv_recepcao from "../assets/imgs/pages/saude/HRV-recepcao.jpg"
 
 import styles from "../styles/pages/saude.module.css"
+import CardIndication from "../components/CardIndication"
 
 const Saude = () => {
   return (
     <main className={styles.healthContainer}>
 
-      <h2>Saúde de qualidade gratuita ou mais em conta para alivar o seu bolso.</h2>
+      <section className={styles.headerHealthContainer}>
+        <h2>Saúde de qualidade gratuita ou mais em conta para alivar o seu bolso.</h2>
+        <img src={pet_care1} alt="Foto do Hospital Veterinario do Recife" />
+      </section>
 
       <section className={styles.hospitalHvrContainer}>
         <h3>Primeiramente, deixa eu te apresentar o Hospital Veterinario do Recife (HVR)</h3>
 
-        <img src={foto_hvr} alt="Foto do Hospital Veterinario do Recife" />
+        <div className={styles.imagesHospital}>
+          <img src={foto_hvr} alt="Foto do Hospital Veterinario do Recife" />
+          <img src={foto_hrv_recepcao} alt="Foto do Hospital Veterinario do Recife" />
+        </div>
 
         <p>Localizado em Recife e exclusivo para a população recifense, o hospital possui:</p>
 
@@ -101,29 +110,37 @@ const Saude = () => {
 
         <p>Se você ainda precisar de petshops, farmácias, veterinários, aqui vão mais dicas:</p>
 
-        <h4>Villa Pet Shop</h4>
-        <p>Artigos para seu pet e clínica veterinária com consulta por 70 reais.</p>
-        <p>Contato: (WhatsApp) 973256094</p>
-        <p>Localização: </p>
-        <iframe className={styles.maps} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.0902613019903!2d-34.9266949!3d-8.0922776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1eeb107ba3d3%3A0x8952dc9c9548c9d4!2sAv.%20Tapaj%C3%B3s%2C%20304%20-%20Est%C3%A2ncia%2C%20Recife%20-%20PE%2C%2050860-010!5e0!3m2!1spt-BR!2sbr!4v1689982567634!5m2!1spt-BR!2sbr"></iframe>
+        <div className={styles.cardsIndicationContainer}>
 
-        <h4>Farma Pet</h4>
-        <p>Farmácia especializada em manipulação de medicamentos veterinários e também contém artigos para seu pet.</p>
-        <p>Contato: (WhatsApp) 99949-0005</p>
-        <p>Localização: </p>
-        <iframe className={styles.maps} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15801.609624665636!2d-34.8869814!3d-8.0603715!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1952d6a41d49%3A0xa7f9c32b1ef21fda!2sFarmaF%C3%B3rmula%20Pet%20Recife!5e0!3m2!1spt-BR!2sbr!4v1689982949461!5m2!1spt-BR!2sbr"></iframe>
+          < CardIndication
+            nome="Villa Pet Shop"
+            descrição="Artigos para seu pet e clínica veterinária com consulta por 70 reais."
+            contato="(WhatsApp) 973256094"
+            linkMaps="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.0902613019903!2d-34.9266949!3d-8.0922776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1eeb107ba3d3%3A0x8952dc9c9548c9d4!2sAv.%20Tapaj%C3%B3s%2C%20304%20-%20Est%C3%A2ncia%2C%20Recife%20-%20PE%2C%2050860-010!5e0!3m2!1spt-BR!2sbr!4v1689982567634!5m2!1spt-BR!2sbr"
+          />
 
-        <h4>G-VET</h4>
-        <p>Clínica veterinária e petshop.</p>
-        <p>Contato: (81) 99154-5553</p>
-        <p>Localização: </p>
-        <iframe className={styles.maps} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15805.138794099326!2d-34.8667798!3d-7.9695012!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1712a81d2163%3A0x959b78bf5a413680!2sG-%20VET%20Dra%20Geisiane%20-%20Preven%C3%A7%C3%A3o%20e%20Sa%C3%BAde%20Veterin%C3%A1ria!5e0!3m2!1spt-BR!2sbr!4v1689983136607!5m2!1spt-BR!2sbr"></iframe>
+          < CardIndication
+            nome="Farma Pet"
+            descrição="Farmácia especializada em manipulação de medicamentos veterinários e também contém artigos para seu pet."
+            contato="(WhatsApp) 99949-0005"
+            linkMaps="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15801.609624665636!2d-34.8869814!3d-8.0603715!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1952d6a41d49%3A0xa7f9c32b1ef21fda!2sFarmaF%C3%B3rmula%20Pet%20Recife!5e0!3m2!1spt-BR!2sbr!4v1689982949461!5m2!1spt-BR!2sbr"
+          />
 
-        <h4>NutriPet</h4>
-        <p>Casa de rações e variedades, tudo no precinho.</p>
-        <p>Contato: Não informado</p>
-        <p>Localização: </p>
-        <iframe className={styles.maps} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15800.712539297874!2d-34.9897577!3d-8.0833082!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1dc087f96b5b%3A0x3f998b4c3ddf8746!2sCASA%20DE%20RA%C3%87%C3%83O%20E%20VARIEDADES%20-%20B.A.S.%20NUTRIPET!5e0!3m2!1spt-BR!2sbr!4v1689983223353!5m2!1spt-BR!2sbr"></iframe>
+          < CardIndication
+            nome="G-VET"
+            descrição="Clínica veterinária e petshop."
+            contato="(81) 99154-5553"
+            linkMaps="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15805.138794099326!2d-34.8667798!3d-7.9695012!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1712a81d2163%3A0x959b78bf5a413680!2sG-%20VET%20Dra%20Geisiane%20-%20Preven%C3%A7%C3%A3o%20e%20Sa%C3%BAde%20Veterin%C3%A1ria!5e0!3m2!1spt-BR!2sbr!4v1689983136607!5m2!1spt-BR!2sbr"
+          />
+
+          < CardIndication
+            nome="NutriPet"
+            descrição="Casa de rações e variedades, tudo no precinho."
+            contato="Não informado"
+            linkMaps="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15800.712539297874!2d-34.9897577!3d-8.0833082!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1dc087f96b5b%3A0x3f998b4c3ddf8746!2sCASA%20DE%20RA%C3%87%C3%83O%20E%20VARIEDADES%20-%20B.A.S.%20NUTRIPET!5e0!3m2!1spt-BR!2sbr!4v1689983223353!5m2!1spt-BR!2sbr"
+          />
+
+        </div>
 
       </section>
 

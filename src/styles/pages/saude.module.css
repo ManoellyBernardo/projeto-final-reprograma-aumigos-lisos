@@ -8,6 +8,23 @@
   text-align: justify;
 }
 
+.headerHealthContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.headerHealthContainer h2 {
+  width: 20rem;
+}
+
+.headerHealthContainer img {
+  width: 10rem;
+  height: 10rem;
+}
+
 .hospitalHvrContainer {
   background-color: var(--light);
   margin-top: 1rem;
@@ -19,6 +36,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.imagesHospital {
+  text-align: center;
 }
 
 .hospitalHvrContainer img {
@@ -48,15 +69,16 @@
   margin-top: 1rem;
   padding: 1rem;
   border-radius: 10px;
-  height: 150rem;
+  height: 80rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.maps {
-  width: 25rem;
-  height: 25rem;
-  border: 0;
+.cardsIndicationContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
 }

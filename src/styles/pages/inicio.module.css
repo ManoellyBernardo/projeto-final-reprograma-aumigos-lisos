@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  height: 30%;
 }
 
 .textIntroductionContainer {
@@ -17,8 +18,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 40rem;
+  height: 20%;
   text-align: center;
+  gap: 1rem;
 }
 
 .cardsContent {
@@ -29,7 +31,15 @@
 .whereAdoptionContainer {
   background-color: var(--primary);
   padding: 2rem;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.cardsIntagramContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
 }

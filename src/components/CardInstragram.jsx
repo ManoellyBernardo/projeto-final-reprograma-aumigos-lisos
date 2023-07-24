@@ -1,19 +1,26 @@
+import Iframe from 'react-iframe'
+
 import styles from "../styles/components/cardinstagram.module.css"
 
-const CardInstragram = ({ nomeOng, contato, localização, linkPostInstagram }) => {
+const CardInstragram = ({ nome, contato, localizacao, linkPostInstagram, id }) => {
   return (
-    <div className={styles.cardInstragramContent}>
-      <h4>{nomeOng}</h4>
-      <p>Contato: {contato}</p>
-      <p>Localização: {localização}</p>
-      <iframe
-        src={linkPostInstagram}
-        frameborder="0"
-        allowfullscreen= "false"
-        width="540"
-        height="609"
-      ></iframe>
-    </div >
+    <section className={styles.cardInstragramContent} style={{ paddingRight: 10 }}>
+      <h4>{nome}</h4>
+      <div className={styles.cardInstragramContentText}>
+        <p>Contato: {contato}</p>
+        <p>Localização: {localizacao}</p>
+      </div>
+      <Iframe url={linkPostInstagram}
+        width="400px"
+        styles={{ height: "600px" }}
+        id={id}
+        className=""
+        overflow="hidden"
+        scrolling="no"
+        display="block"
+        position="relative"
+      />
+    </section>
   )
 }
 
