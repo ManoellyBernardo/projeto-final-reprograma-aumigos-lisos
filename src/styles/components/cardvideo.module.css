@@ -1,0 +1,17 @@
+.cardVideoContainer {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardVideoContainer p {
+  width: 18rem;
+  text-align: center;
+}
+
+.cardVideoContainer iframe {
+  width: 25rem;
+  height: 15rem;
+}

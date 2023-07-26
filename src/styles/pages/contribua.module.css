@@ -1,0 +1,44 @@
+.contribuaContainer {
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.headerContribuaContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerContribuaContainer h2 {
+  width: 20rem;
+  text-align: center;
+}
+
+.headerContribuaContainer img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.formContribuaContainer {
+  background-color: var(--light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+  gap: 1rem;
+  height: 50vh;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 25rem;
+}

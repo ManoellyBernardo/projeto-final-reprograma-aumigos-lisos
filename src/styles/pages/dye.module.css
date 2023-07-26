@@ -1,0 +1,66 @@
+.dyeContainer {
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.headerDyeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.headerDyeContainer h2 {
+  width: 30rem;
+  text-align: center;
+}
+
+.headerDyeContainer img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.toysContainer {
+  background-color: var(--light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.toysDogsContainer {
+  display: flex;
+  gap: 2rem;
+}
+
+.toysCatsContainer {
+  display: flex;
+  gap: 2rem;
+}
+
+.snacks {
+  background-color: var(--light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px;
+  text-align: justify;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.snacks h3 {
+  text-align: center;
+}
+
+.snacks li {
+  margin-left: 2rem;
+}

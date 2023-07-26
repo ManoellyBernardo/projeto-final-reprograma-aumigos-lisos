@@ -1,5 +1,12 @@
 import { useState } from 'react'
 
+import database from "../service/firebase"
+import { ref, push, set } from "firebase/database"
+
+import hug from "../assets/imgs/pages/contribua/hug.png"
+
+import styles from "../styles/pages/contribua.module.css"
+
 const Contribua = () => {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
@@ -34,33 +41,46 @@ const Contribua = () => {
   }
 
   return (
-    <main>
-      <h2>Ajude com + informações</h2>
-      <p>Conhece alguma clinica, veterinario, petshop, lugar etc que tenha haver com a proposta do website e poderia estar facilmente presente nas nossas postagem ? </p>
-      <p>Então ajuda, bença e preenche o formulario, por favor.</p>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder='Digite seu nome'
-          onChange={handleInputNome}
-          value={nome}
-        />
-        <input
-          type="email"
-          placeholder='Digite seu email'
-          onChange={handleInputEmail}
-          value={email}
-        />
-        <textarea
-          type="text"
-          placeholder='Digite seu nome'
-          onChange={handleInputMensagem}
-          value={mensagem}
-        />
-        <button
-          type="submit">Enviar Mensagem
-        </button>
-      </form>
+    <main className={styles.contribuaContainer}>
+
+      <section className={styles.headerContribuaContainer}>
+        <img src={hug} alt="Tutor abraçando seu gatinho." />
+        <h2>Ajude com + informações</h2>
+      </section>
+
+      <section className={styles.formContribuaContainer}>
+        <p>Conhece alguma clínica, veterinário, pet shop, lugar, etc., que tenha a ver com a proposta do website e poderia estar facilmente presente nas nossas postagens? </p>
+
+        <p>Então, nos ajude e preencha o formulário, por favor.</p>
+
+        <form className={styles.formContainer} onSubmit={handleSubmit}>
+
+          <input
+            type="text"
+            placeholder='Digite seu nome'
+            onChange={handleInputNome}
+            value={nome}
+          />
+          <input
+            type="email"
+            placeholder='Digite seu email'
+            onChange={handleInputEmail}
+            value={email}
+          />
+          <textarea
+            type="text"
+            placeholder='Digite sua mensagem'
+            onChange={handleInputMensagem}
+            value={mensagem}
+          />
+          <button
+            type="submit">Enviar Mensagem
+          </button>
+          
+        </form>
+
+      </section>
+
     </main>
   )
 }

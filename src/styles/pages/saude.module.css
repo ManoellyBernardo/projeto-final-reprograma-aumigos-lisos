@@ -69,11 +69,11 @@
   margin-top: 1rem;
   padding: 1rem;
   border-radius: 10px;
-  height: 80rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 1rem;
 }
 
 .cardsIndicationContainer {
@@ -81,4 +81,21 @@
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 1rem;
+}
+
+.plusContainerTitle {
+  background-color: var(--light);
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.plusContainerContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 10px;
+  width: 100%;
 }

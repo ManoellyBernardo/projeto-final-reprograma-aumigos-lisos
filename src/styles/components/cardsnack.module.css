@@ -1,0 +1,13 @@
+.cardSnackContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  border-style: dashed;
+  height: 3rem;
+  width: 10rem;
+}
+
+.cardSnackContainer img {
+  width: 3rem;
+}
