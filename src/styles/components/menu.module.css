@@ -3,6 +3,7 @@
   justify-content: space-evenly;
   width: 100%;
   background-color: var(--blue);
+  padding: 0 2rem 0 2rem;
 }
 
 .imageLogo {
@@ -24,4 +25,40 @@
   text-decoration: none;
   color: var(--light);
   font-size: 1rem;
+}
+
+@media (max-width: 1155px){
+
+  .menuContainer {
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 910px){
+
+  .menuContainer {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 750px){
+
+  .container {
+    flex-direction: column;
+  }
+
+  .container h1 {
+    text-align: center;
+  }
+
+  .imageLogo {
+    text-align: center;
+  }
+
+  .menuContainer {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
 }
