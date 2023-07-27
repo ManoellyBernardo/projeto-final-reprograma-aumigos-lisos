@@ -19,7 +19,7 @@ const Saude = () => {
 
         <div className={styles.imagesHospital}>
           <img src={foto_hvr} alt="Foto do Hospital Veterinario do Recife" />
-          <img src={foto_hrv_recepcao} alt="Foto do Hospital Veterinario do Recife" />
+          <img src={foto_hrv_recepcao} alt="Foto da recepção do Hospital Veterinario do Recife" />
         </div>
 
         <p>Localizado em Recife e exclusivo para a população recifense, o hospital possui:</p>

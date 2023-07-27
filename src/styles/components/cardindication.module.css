@@ -36,7 +36,7 @@
   border-radius: 10px
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .cardIndicationContainer {
     width: 25%;
     min-width: 438px;
@@ -71,7 +71,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .cardIndicationContainer {
     width: 100%;
     min-width: 438px;
@@ -82,5 +82,11 @@
   .maps {
     width: 100%;
     height: 300px;
+  }
+}
+
+@media (max-width: 505px) {
+  .cardIndicationContainer {
+    min-width: 100%;
   }
 }
