@@ -42,3 +42,9 @@
   gap: 1rem;
   width: 25rem;
 }
+
+@media (max-width: 480px) {
+  .formContainer {
+    width: 90%;
+  }
+}
