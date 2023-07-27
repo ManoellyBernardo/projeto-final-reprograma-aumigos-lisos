@@ -1,7 +1,7 @@
 .cardInstragramContent {
   background-color: var(--light);
   width: 27rem;
-  height: 42rem;
+  height: 40%;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -22,8 +22,14 @@
   width: 30rem;
 }
 
+@media (max-width: 550px) {
+  .cardInstragramContent {
+    width: 90%;
+  }
+}
+
 @media (max-width: 450px) {
-  .iframe {
+  iframe {
     width: 400px;
   }
 }

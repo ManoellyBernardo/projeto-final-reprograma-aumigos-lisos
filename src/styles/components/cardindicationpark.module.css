@@ -8,3 +8,21 @@
   height: 30rem;
   padding: 1rem;
 }
+
+@media (max-width: 560px) {
+  .cardIndicationParkContainer {
+    width: 90%;
+    height: 30%;
+  }
+
+  .imagePark {
+    width: 90%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  iframe {
+    width: 90%;
+  }
+}

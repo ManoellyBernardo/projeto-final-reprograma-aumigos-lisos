@@ -69,6 +69,7 @@
   justify-content: space-around;
   padding: 1rem;
   border-radius: 10px;
+  gap: 1rem;
 }
 
 .cardsIntagramContainer {
@@ -80,4 +81,26 @@
   width: 15rem;
   height: 15rem;
   align-self: flex-end;
+}
+
+@media (max-width: 980px) {
+  .cardsIntagramContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .cardsIntagramContainer img {
+    align-self: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .cardsIntagramContainer {
+    width: 90%;
+  }
+
+  .cardsIntagramContainer img {
+    width: 70%;
+    height: 40%;
+  }
 }
