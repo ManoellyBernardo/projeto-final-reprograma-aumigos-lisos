@@ -1,6 +1,6 @@
 .cardContent {
   background-color: var(--light);
-  width: 25rem;
+  width: 30%;
   height: 10rem;
   border-radius: 10px;
   display: flex;
@@ -14,4 +14,35 @@
 .cardContent img {
   width: 8rem;
   height: 8rem;
+}
+
+@media (max-width: 1185px) {
+  .cardContent {
+    width: 60%;
+  }
+}
+
+@media (max-width: 605px) {
+  .cardContent {
+    width: 70%;
+  }
+}
+
+@media (max-width: 545px) {
+  .cardContent {
+    width: 80%;
+  }
+}
+
+@media (max-width: 545px) {
+  .cardContent {
+    width: 85%;
+  }
+}
+
+@media (max-width: 450px) {
+  .cardContent {
+    flex-direction: column;
+    height: 30%;
+  }
 }

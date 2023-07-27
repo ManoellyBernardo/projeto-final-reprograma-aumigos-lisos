@@ -7,6 +7,10 @@
   height: 30%;
 }
 
+.introductionContainer img {
+  width: 100%;
+}
+
 .textIntroductionContainer {
   width: 40rem;
   text-align: justify;
@@ -31,10 +35,10 @@
 .whereAdoptionContainer {
   background-color: var(--primary);
   padding: 2rem;
-  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 2rem;
 }
 
 .cardsIntagramContainer {
@@ -42,4 +46,29 @@
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 2rem;
+}
+
+@media (max-width: 1185px) {
+
+  .cardsContent {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40rem;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .introductionContainer {
+    flex-direction: column;
+  }
+
+  .textIntroductionContainer {
+    width: 90%;
+  }
+
+  .cardsContent {
+    height: 70rem;
+  }
 }

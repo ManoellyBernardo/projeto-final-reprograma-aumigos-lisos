@@ -11,10 +11,7 @@ const CardInstragram = ({ nome, contato, localizacao, linkPostInstagram, id }) =
         <p>Localização: {localizacao}</p>
       </div>
       <Iframe url={linkPostInstagram}
-        width="400px"
-        styles={{ height: "600px" }}
         id={id}
-        className=""
         overflow="hidden"
         scrolling="no"
         display="block"

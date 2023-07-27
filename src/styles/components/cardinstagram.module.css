@@ -21,3 +21,9 @@
 .postInstagram {
   width: 30rem;
 }
+
+@media (max-width: 450px) {
+  .iframe {
+    width: 400px;
+  }
+}
