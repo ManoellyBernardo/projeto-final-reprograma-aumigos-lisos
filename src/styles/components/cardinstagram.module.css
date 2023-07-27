@@ -1,7 +1,7 @@
 .cardInstragramContent {
   background-color: var(--light);
   width: 27rem;
-  height: 40%;
+  height: 40rem;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
