@@ -64,3 +64,13 @@
 .snacks li {
   margin-left: 2rem;
 }
+
+@media (max-width:1350px) {
+  .toysDogsContainer {
+    flex-direction: column;
+  }
+
+  .toysCatsContainer {
+    flex-direction: column;
+  }
+}

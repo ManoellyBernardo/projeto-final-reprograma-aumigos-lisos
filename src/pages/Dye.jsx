@@ -10,7 +10,7 @@ const Dye = () => {
       <section className={styles.headerDyeContainer}>
 
         <img src={shelter} alt="Tutor com seu gato dentro de uma caixa" />
-        <h2>Briquedos e petiscos para pets são o olho da cara, né ? <br /> Mas aqui a gente vai economizar e fazer o nosso!</h2>
+        <h2>Petiscos e briquedos para pets são o olho da cara, né ? <br /> Mas aqui a gente vai economizar e fazer o nosso!</h2>
 
       </section>
 
