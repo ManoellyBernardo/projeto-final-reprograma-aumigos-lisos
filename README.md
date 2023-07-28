@@ -9,6 +9,8 @@ Aumigos Lisos é um website pensado para residentes do Recife e da Região Metro
 
 O website na íntegra pode ser conferido no seguinte link: https://aumigos-lisos.netlify.app/
 
+## 🏗️ Estrutura do projeto:
+
 **O site possui 6 páginas:**
 
 - Início: Nesta página, o usuário encontrará o objetivo do website, juntamente com informações sobre o conteúdo disponível. Além disso, há conteúdo sobre a importância da adoção responsável de animais de estimação, em vez da compra, e locais em Recife onde é possível encontrar pets para adoção, proporcionando uma oportunidade amorosa de dar um lar para um amigo peludo necessitado;
@@ -17,8 +19,6 @@ O website na íntegra pode ser conferido no seguinte link: https://aumigos-lisos
 - Faça você mesmo: Aqui, o usuário encontrará dicas de petiscos simples, além de vídeos que ensinam a fazer brinquedos para os pets;
 - Add + informações: Nesta página, há disponivel campos de formulário para que o usuário possa sugerir conteúdos adicionais, contribuindo para enriquecer ainda mais o website, ou fazer críticas construtivas;
 - Quem sou eu ?: Aqui, conto um pouco sobre mim e minha motivação para criar este website dedicado aos pets e seus cuidadores.
-
-## 🏗️ Estrutura do projeto:
 
 ![estrutura do projeto](https://github.com/ManoellyBernardo/projeto-final-reprograma-aumigos-lisos/assets/101145105/625d7ff1-453a-4a2e-9f41-63901227422e)
 
